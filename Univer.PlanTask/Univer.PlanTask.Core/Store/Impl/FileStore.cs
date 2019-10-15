@@ -1,107 +1,102 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using Univer.PlanTask.ConsoleApp;
+using System.Web.Script.Serialization;
 
 namespace Univer.PlanTask.Core.Store.Impl
 {
-    public class FileStore : IBaseStore
+    /// <summary>
+    /// Файловое хранилище
+    /// </summary>
+    public class FileStore<T> : IBaseStore where T: class, IEntity 
     {
+        private IList<IEntity> store = new List<IEntity>();
+
+        private JavaScriptSerializer Serializer = new JavaScriptSerializer();
+
+        private string filePath { get; set; }
+
+        private void Flush()
+        {
+            var json = Serializer.Serialize(store);
+            File.WriteAllText(filePath, json);
+        }
+
+        public FileStore()
+        {
+            filePath = @"D:\path.json";
+            Init();
+        }
+        public FileStore(string path)
+        {
+            filePath = path;
+            Init();
+        }
+
+        public void Init()
+        {
+            if (File.Exists(filePath))
+            {
+                var json = File.ReadAllText(filePath);
+                var data = Serializer.Deserialize<T[]>(json);
+
+                foreach (var item in data)
+                {
+                    store.Add(item);
+                }
+            }
+        }
+
+        ///<inheritdoc/>
         public void Create(IEntity model)
         {
-            StreamWriter sw = new StreamWriter("D:\\PlanTask\\Univer.PlanTask\\Univer.PlanTask.ConsoleApp\\FileStore.txt", true);
-            sw.WriteLine(Convert.ToString(model.Id));
-            sw.Close();
+            if (model != null)
+            {
+                store.Add(model);
+                Flush();
+            }
         }
 
+        ///<inheritdoc/>
         public bool Delete(long Id)
         {
-            StreamReader sr = new StreamReader("D:\\PlanTask\\Univer.PlanTask\\Univer.PlanTask.ConsoleApp\\FileStore.txt");
-
-            bool del = false;
-
-            string fileStoreStr = "";
-            string str;
-
-            while ((str = sr.ReadLine()) != null)
-                if (str != Convert.ToString(Id))
-                    fileStoreStr += str + "\n";
-                else
-                    del = true;
-            sr.Close();
-            StreamWriter sw = new StreamWriter("D:\\PlanTask\\Univer.PlanTask\\Univer.PlanTask.ConsoleApp\\FileStore.txt");
-            sw.Write(fileStoreStr, false);
-            sw.Close();
-            return del;
+            var item = Get(Id);
+            if (item != null)
+            {
+                store.Remove(item);
+                Flush();
+            }
+            return true;
         }
 
+        ///<inheritdoc/>
         public IEnumerable<IEntity> Find(string[] args)
         {
-            StreamReader sr = new StreamReader("D:\\PlanTask\\Univer.PlanTask\\Univer.PlanTask.ConsoleApp\\FileStore.txt");
-
-            long id = -1;
-
-            string str;
-
-            if (args.Count() != 0 && args[0].Count() != 0)
-                id = Convert.ToInt64(args[0]);
-
-            List<IEntity> FindEntities = new List<IEntity>();
-
-            if (id != -1)
-                while ((str = sr.ReadLine()) != null)
-                    if (str == Convert.ToString(id))
-                        FindEntities.Add(new Task(id));
-            sr.Close();
-            if (FindEntities.Count == 0)
-                return null;
-            return FindEntities;
+            return store;
         }
 
-        public IEntity Get(long Id)
+        ///<inheritdoc/>
+        public IEntity Get(long id)
         {
-            StreamReader sr = new StreamReader("D:\\PlanTask\\Univer.PlanTask\\Univer.PlanTask.ConsoleApp\\FileStore.txt");
-            string str;
-            while ((str = sr.ReadLine()) != null)
-                if (str == Convert.ToString(Id))
-                {
-                    sr.Close();
-                    return new Task(Id);
-                }
-            sr.Close();
-            return null;
+            return store.FirstOrDefault(item => item.Id == id);
         }
 
+        ///<inheritdoc/>
         public IEnumerable<IEntity> GetAll()
         {
-            StreamReader sr = new StreamReader("D:\\PlanTask\\Univer.PlanTask\\Univer.PlanTask.ConsoleApp\\FileStore.txt");
-            string str;
-            List<IEntity> entities = new List<IEntity>();
-            while ((str = sr.ReadLine()) != null)
-                entities.Add(new Task(Convert.ToInt64(str)));
-            sr.Close();
-            if (entities.Count != 0)
-                return entities;
-            return null;
+            return store;
         }
 
+        ///<inheritdoc/>
         public void Update(IEntity model)
         {
-            StreamReader sr = new StreamReader("D:\\PlanTask\\Univer.PlanTask\\Univer.PlanTask.ConsoleApp\\FileStore.txt");
-            string str;
-            string fileStoreStr = "";
-            while ((str = sr.ReadLine()) != null)
+            if (model != null)
             {
-                if (Convert.ToInt64(str) != model.Id)
-                    fileStoreStr += str + "\n";
-                else
-                    fileStoreStr += Convert.ToString(model.Id) + "\n";
+                if (Delete(model.Id))
+                {
+                    Create(model);
+                }
             }
-            sr.Close();
-            StreamWriter sw = new StreamWriter("D:\\PlanTask\\Univer.PlanTask\\Univer.PlanTask.ConsoleApp\\FileStore.txt");
-            sw.Write(fileStoreStr);
-            sw.Close();
         }
     }
 }

@@ -1,0 +1,7 @@
+D:\C#\Alternate\Univer.PlanTask\Univer.PlanTask.Core\bin\Debug\Univer.PlanTask.Core.dll.config
+D:\C#\Alternate\Univer.PlanTask\Univer.PlanTask.Core\bin\Debug\Univer.PlanTask.Core.dll
+D:\C#\Alternate\Univer.PlanTask\Univer.PlanTask.Core\bin\Debug\Univer.PlanTask.Core.pdb
+D:\C#\Alternate\Univer.PlanTask\Univer.PlanTask.Core\obj\Debug\Univer.PlanTask.Core.csprojAssemblyReference.cache
+D:\C#\Alternate\Univer.PlanTask\Univer.PlanTask.Core\obj\Debug\Univer.PlanTask.Core.csproj.CoreCompileInputs.cache
+D:\C#\Alternate\Univer.PlanTask\Univer.PlanTask.Core\obj\Debug\Univer.PlanTask.Core.dll
+D:\C#\Alternate\Univer.PlanTask\Univer.PlanTask.Core\obj\Debug\Univer.PlanTask.Core.pdb
