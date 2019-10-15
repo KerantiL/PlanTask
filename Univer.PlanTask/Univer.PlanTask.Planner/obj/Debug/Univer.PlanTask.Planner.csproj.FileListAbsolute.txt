@@ -1,0 +1,15 @@
+D:\C#\Alternate\Univer.PlanTask\Univer.PlanTask.Planner\bin\Debug\Univer.PlanTask.Planner.exe.config
+D:\C#\Alternate\Univer.PlanTask\Univer.PlanTask.Planner\bin\Debug\Univer.PlanTask.Planner.exe
+D:\C#\Alternate\Univer.PlanTask\Univer.PlanTask.Planner\bin\Debug\Univer.PlanTask.Planner.pdb
+D:\C#\Alternate\Univer.PlanTask\Univer.PlanTask.Planner\bin\Debug\Univer.PlanTask.Core.dll
+D:\C#\Alternate\Univer.PlanTask\Univer.PlanTask.Planner\bin\Debug\Univer.PlanTask.Core.pdb
+D:\C#\Alternate\Univer.PlanTask\Univer.PlanTask.Planner\bin\Debug\Univer.PlanTask.Core.dll.config
+D:\C#\Alternate\Univer.PlanTask\Univer.PlanTask.Planner\obj\Debug\Univer.PlanTask.Planner.csprojAssemblyReference.cache
+D:\C#\Alternate\Univer.PlanTask\Univer.PlanTask.Planner\obj\Debug\Univer.PlanTask.Planner.FormMain.resources
+D:\C#\Alternate\Univer.PlanTask\Univer.PlanTask.Planner\obj\Debug\Univer.PlanTask.Planner.Properties.Resources.resources
+D:\C#\Alternate\Univer.PlanTask\Univer.PlanTask.Planner\obj\Debug\Univer.PlanTask.Planner.csproj.GenerateResource.cache
+D:\C#\Alternate\Univer.PlanTask\Univer.PlanTask.Planner\obj\Debug\Univer.PlanTask.Planner.csproj.CoreCompileInputs.cache
+D:\C#\Alternate\Univer.PlanTask\Univer.PlanTask.Planner\obj\Debug\Univer.PlanTask.Planner.csproj.CopyComplete
+D:\C#\Alternate\Univer.PlanTask\Univer.PlanTask.Planner\obj\Debug\Univer.PlanTask.Planner.exe
+D:\C#\Alternate\Univer.PlanTask\Univer.PlanTask.Planner\obj\Debug\Univer.PlanTask.Planner.pdb
+D:\C#\Alternate\Univer.PlanTask\Univer.PlanTask.Planner\obj\Debug\Univer.PlanTask.Planner.InputBox.resources

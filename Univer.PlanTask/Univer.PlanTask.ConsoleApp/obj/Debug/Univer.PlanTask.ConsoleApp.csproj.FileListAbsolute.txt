@@ -1,0 +1,11 @@
+D:\C#\Alternate\Univer.PlanTask\Univer.PlanTask.ConsoleApp\obj\Debug\Univer.PlanTask.ConsoleApp.csprojAssemblyReference.cache
+D:\C#\Alternate\Univer.PlanTask\Univer.PlanTask.ConsoleApp\obj\Debug\Univer.PlanTask.ConsoleApp.csproj.CoreCompileInputs.cache
+D:\C#\Alternate\Univer.PlanTask\Univer.PlanTask.ConsoleApp\bin\Debug\Univer.PlanTask.ConsoleApp.exe.config
+D:\C#\Alternate\Univer.PlanTask\Univer.PlanTask.ConsoleApp\bin\Debug\Univer.PlanTask.ConsoleApp.exe
+D:\C#\Alternate\Univer.PlanTask\Univer.PlanTask.ConsoleApp\bin\Debug\Univer.PlanTask.ConsoleApp.pdb
+D:\C#\Alternate\Univer.PlanTask\Univer.PlanTask.ConsoleApp\bin\Debug\Univer.PlanTask.Core.dll
+D:\C#\Alternate\Univer.PlanTask\Univer.PlanTask.ConsoleApp\bin\Debug\Univer.PlanTask.Core.pdb
+D:\C#\Alternate\Univer.PlanTask\Univer.PlanTask.ConsoleApp\bin\Debug\Univer.PlanTask.Core.dll.config
+D:\C#\Alternate\Univer.PlanTask\Univer.PlanTask.ConsoleApp\obj\Debug\Univer.PlanTask.ConsoleApp.csproj.CopyComplete
+D:\C#\Alternate\Univer.PlanTask\Univer.PlanTask.ConsoleApp\obj\Debug\Univer.PlanTask.ConsoleApp.exe
+D:\C#\Alternate\Univer.PlanTask\Univer.PlanTask.ConsoleApp\obj\Debug\Univer.PlanTask.ConsoleApp.pdb
