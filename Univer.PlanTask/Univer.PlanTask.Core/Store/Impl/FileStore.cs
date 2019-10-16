@@ -2,22 +2,28 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Web.Script.Serialization;
 using Univer.PlanTask.ConsoleApp;
 
 namespace Univer.PlanTask.Core.Store.Impl
 {
     public class FileStore : IBaseStore
     {
+        string Path { get; }
+
+        public FileStore(string path) => Path = path;
+
+        JavaScriptSerializer serializer = new JavaScriptSerializer();
         public void Create(IEntity model)
         {
-            StreamWriter sw = new StreamWriter("D:\\PlanTask\\Univer.PlanTask\\Univer.PlanTask.ConsoleApp\\FileStore.txt", true);
-            sw.WriteLine(Convert.ToString(model.Id));
+            StreamWriter sw = new StreamWriter(Path, true);
+            sw.WriteLine(serializer.Serialize(model));
             sw.Close();
         }
 
         public bool Delete(long Id)
         {
-            StreamReader sr = new StreamReader("D:\\PlanTask\\Univer.PlanTask\\Univer.PlanTask.ConsoleApp\\FileStore.txt");
+            StreamReader sr = new StreamReader(Path);
 
             bool del = false;
 
@@ -30,7 +36,7 @@ namespace Univer.PlanTask.Core.Store.Impl
                 else
                     del = true;
             sr.Close();
-            StreamWriter sw = new StreamWriter("D:\\PlanTask\\Univer.PlanTask\\Univer.PlanTask.ConsoleApp\\FileStore.txt");
+            StreamWriter sw = new StreamWriter(Path);
             sw.Write(fileStoreStr, false);
             sw.Close();
             return del;
@@ -38,7 +44,7 @@ namespace Univer.PlanTask.Core.Store.Impl
 
         public IEnumerable<IEntity> Find(string[] args)
         {
-            StreamReader sr = new StreamReader("D:\\PlanTask\\Univer.PlanTask\\Univer.PlanTask.ConsoleApp\\FileStore.txt");
+            StreamReader sr = new StreamReader(Path);
 
             long id = -1;
 
@@ -61,7 +67,7 @@ namespace Univer.PlanTask.Core.Store.Impl
 
         public IEntity Get(long Id)
         {
-            StreamReader sr = new StreamReader("D:\\PlanTask\\Univer.PlanTask\\Univer.PlanTask.ConsoleApp\\FileStore.txt");
+            StreamReader sr = new StreamReader(Path);
             string str;
             while ((str = sr.ReadLine()) != null)
                 if (str == Convert.ToString(Id))
@@ -75,20 +81,26 @@ namespace Univer.PlanTask.Core.Store.Impl
 
         public IEnumerable<IEntity> GetAll()
         {
-            StreamReader sr = new StreamReader("D:\\PlanTask\\Univer.PlanTask\\Univer.PlanTask.ConsoleApp\\FileStore.txt");
+            //StreamReader sr = new StreamReader(Path);
+            //List<IEntity> entities = new List<IEntity>();
             string str;
-            List<IEntity> entities = new List<IEntity>();
-            while ((str = sr.ReadLine()) != null)
-                entities.Add(new Task(Convert.ToInt64(str)));
-            sr.Close();
+            Console.WriteLine(File.ReadAllText(Path));
+            StreamReader sr = new StreamReader(Path);
+            //Console.WriteLine(serializer.Deserialize<Task>(Path));
+            //Console.WriteLine(serializer.Deserialize<Task>(Path).Id);
+            /*foreach (var item in Path)
+            {
+                Console.WriteLine(item);
+                //entities.Add(serializer.Deserialize<Task>(File.ReadAllText(Path)));
+            }
             if (entities.Count != 0)
-                return entities;
+                return entities;*/
             return null;
         }
 
         public void Update(IEntity model)
         {
-            StreamReader sr = new StreamReader("D:\\PlanTask\\Univer.PlanTask\\Univer.PlanTask.ConsoleApp\\FileStore.txt");
+            StreamReader sr = new StreamReader(Path);
             string str;
             string fileStoreStr = "";
             while ((str = sr.ReadLine()) != null)
@@ -99,7 +111,7 @@ namespace Univer.PlanTask.Core.Store.Impl
                     fileStoreStr += Convert.ToString(model.Id) + "\n";
             }
             sr.Close();
-            StreamWriter sw = new StreamWriter("D:\\PlanTask\\Univer.PlanTask\\Univer.PlanTask.ConsoleApp\\FileStore.txt");
+            StreamWriter sw = new StreamWriter(Path);
             sw.Write(fileStoreStr);
             sw.Close();
         }

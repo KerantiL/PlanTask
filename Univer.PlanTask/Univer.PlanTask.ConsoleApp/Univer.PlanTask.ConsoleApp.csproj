@@ -55,8 +55,5 @@
       <Name>Univer.PlanTask.Core</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="FileStore.txt" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
