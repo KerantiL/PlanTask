@@ -35,8 +35,10 @@
             this.flowLeft = new System.Windows.Forms.FlowLayoutPanel();
             this.cbTasks = new System.Windows.Forms.CheckedListBox();
             this.AddButton = new System.Windows.Forms.Button();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.flowMain.SuspendLayout();
             this.flowLeft.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // flowTop
@@ -61,6 +63,7 @@
             // 
             this.flowLeft.Controls.Add(this.cbTasks);
             this.flowLeft.Controls.Add(this.AddButton);
+            this.flowLeft.Controls.Add(this.numericUpDown1);
             resources.ApplyResources(this.flowLeft, "flowLeft");
             this.flowLeft.Name = "flowLeft";
             // 
@@ -83,6 +86,11 @@
             this.AddButton.UseVisualStyleBackColor = false;
             this.AddButton.Click += new System.EventHandler(this.AddButton_Click);
             // 
+            // numericUpDown1
+            // 
+            resources.ApplyResources(this.numericUpDown1, "numericUpDown1");
+            this.numericUpDown1.Name = "numericUpDown1";
+            // 
             // FormMain
             // 
             resources.ApplyResources(this, "$this");
@@ -94,6 +102,7 @@
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.flowMain.ResumeLayout(false);
             this.flowLeft.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -106,6 +115,7 @@
         private System.Windows.Forms.FlowLayoutPanel flowLeft;
         private System.Windows.Forms.CheckedListBox cbTasks;
         private System.Windows.Forms.Button AddButton;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
     }
 }
 

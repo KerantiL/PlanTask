@@ -126,10 +126,10 @@
     <value>0, 0</value>
   </data>
   <data name="flowTop.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="flowTop.Size" type="System.Drawing.Size, System.Drawing">
-    <value>498, 28</value>
+    <value>664, 34</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="flowTop.TabIndex" type="System.Int32, mscorlib">
@@ -154,10 +154,7 @@
     <value>NoControl</value>
   </data>
   <data name="calendar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 7</value>
-  </data>
-  <data name="calendar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>7, 7, 7, 7</value>
+    <value>9, 9</value>
   </data>
   <data name="calendar.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -175,13 +172,13 @@
     <value>0</value>
   </data>
   <data name="flowMain.Location" type="System.Drawing.Point, System.Drawing">
-    <value>225, 33</value>
+    <value>300, 41</value>
   </data>
   <data name="flowMain.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="flowMain.Size" type="System.Drawing.Size, System.Drawing">
-    <value>264, 286</value>
+    <value>352, 352</value>
   </data>
   <data name="flowMain.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -211,13 +208,13 @@
     <value>Прийти на работу</value>
   </data>
   <data name="cbTasks.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 2</value>
+    <value>3, 2</value>
   </data>
   <data name="cbTasks.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="cbTasks.Size" type="System.Drawing.Size, System.Drawing">
-    <value>205, 244</value>
+    <value>272, 293</value>
   </data>
   <data name="cbTasks.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -241,10 +238,13 @@
     <value>NoControl</value>
   </data>
   <data name="AddButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 251</value>
+    <value>4, 301</value>
+  </data>
+  <data name="AddButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="AddButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>204, 40</value>
+    <value>272, 49</value>
   </data>
   <data name="AddButton.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -264,17 +264,38 @@
   <data name="&gt;&gt;AddButton.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="numericUpDown1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 357</value>
+  </data>
+  <data name="numericUpDown1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>8, 22</value>
+  </data>
+  <data name="numericUpDown1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown1.Name" xml:space="preserve">
+    <value>numericUpDown1</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown1.Parent" xml:space="preserve">
+    <value>flowLeft</value>
+  </data>
+  <data name="&gt;&gt;numericUpDown1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="flowLeft.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Left</value>
   </data>
   <data name="flowLeft.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 28</value>
+    <value>0, 34</value>
   </data>
   <data name="flowLeft.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="flowLeft.Size" type="System.Drawing.Size, System.Drawing">
-    <value>207, 301</value>
+    <value>276, 371</value>
   </data>
   <data name="flowLeft.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -295,13 +316,13 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>8, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>498, 329</value>
+    <value>664, 405</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
