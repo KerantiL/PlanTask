@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace Univer.PlanTask.Core.Store
 {
@@ -17,32 +13,37 @@ namespace Univer.PlanTask.Core.Store
         /// <param name="Id">Идентификатор</param>
         /// <returns>Объект</returns>
         IEntity Get(long Id);
+
         /// <summary>
-        /// Создать объект, передав объект
+        /// Создать сущность
         /// </summary>
-        /// <param name="model">Объект</param>
+        /// <param name="model">Сущность</param>
         void Create(IEntity model);
+
         /// <summary>
-        /// Удалить объект по идентификатору
+        /// Удалить сущность по идентификатору
         /// </summary>
         /// <param name="Id">Идентификатор</param>
-        /// <returns></returns>
+        /// <returns>True, если удаление прошло успешно</returns>
         bool Delete(long Id);
+
         /// <summary>
-        /// Обновить объект,передав объект
+        /// Обновить сущность
         /// </summary>
-        /// <param name="model">Объект</param>
+        /// <param name="model">Сущность</param>
         void Update(IEntity model);
+
         /// <summary>
-        /// Возвратить все объекты хранилища
+        /// Получить все сущности
         /// </summary>
-        /// <returns>Объекты хранилища</returns>
+        /// <returns>Перечисление сущностей</returns>
         IEnumerable<IEntity> GetAll();
+
         /// <summary>
-        /// Поиск объектов хранилища
+        /// Найти сущности по заданным условиям
         /// </summary>
-        /// <param name="args">Параметр поиска</param>
-        /// <returns>Объекты хранилища</returns>
+        /// <param name="args">Условия</param>
+        /// <returns>Перечисление сущностей</returns>
         IEnumerable<IEntity> Find(string[] args);
     }
 }

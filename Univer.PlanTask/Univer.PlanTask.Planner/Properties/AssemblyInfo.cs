@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Общие сведения об этой сборке предоставляются следующим набором
 // набора атрибутов. Измените значения этих атрибутов, чтобы изменить сведения,
 // связанные со сборкой.
-[assembly: AssemblyTitle("Univer.PlanTask.Core")]
+[assembly: AssemblyTitle("Univer.PlanTask.Planner")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Univer.PlanTask.Core")]
+[assembly: AssemblyProduct("Univer.PlanTask.Planner")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Следующий GUID служит для идентификации библиотеки типов, если этот проект будет видимым для COM
-[assembly: Guid("1b71c722-b04f-42b8-ae59-12ef2e54cd18")]
+[assembly: Guid("b561c983-331d-41a2-a8ad-979a922177f6")]
 
 // Сведения о версии сборки состоят из следующих четырех значений:
 //
