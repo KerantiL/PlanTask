@@ -35,10 +35,10 @@
             this.flowLeft = new System.Windows.Forms.FlowLayoutPanel();
             this.cbTasks = new System.Windows.Forms.CheckedListBox();
             this.AddButton = new System.Windows.Forms.Button();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.finishTimeList = new System.Windows.Forms.ListBox();
+            this.strartTimeList = new System.Windows.Forms.ListBox();
             this.flowMain.SuspendLayout();
             this.flowLeft.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // flowTop
@@ -62,21 +62,20 @@
             // flowLeft
             // 
             this.flowLeft.Controls.Add(this.cbTasks);
+            this.flowLeft.Controls.Add(this.strartTimeList);
+            this.flowLeft.Controls.Add(this.finishTimeList);
             this.flowLeft.Controls.Add(this.AddButton);
-            this.flowLeft.Controls.Add(this.numericUpDown1);
             resources.ApplyResources(this.flowLeft, "flowLeft");
             this.flowLeft.Name = "flowLeft";
+            this.flowLeft.Paint += new System.Windows.Forms.PaintEventHandler(this.FlowLeft_Paint);
             // 
             // cbTasks
             // 
-            this.cbTasks.FormattingEnabled = true;
-            this.cbTasks.Items.AddRange(new object[] {
-            resources.GetString("cbTasks.Items"),
-            resources.GetString("cbTasks.Items1"),
-            resources.GetString("cbTasks.Items2"),
-            resources.GetString("cbTasks.Items3")});
             resources.ApplyResources(this.cbTasks, "cbTasks");
+            this.cbTasks.FormattingEnabled = true;
+            this.cbTasks.MultiColumn = true;
             this.cbTasks.Name = "cbTasks";
+            this.cbTasks.SelectedIndexChanged += new System.EventHandler(this.CbTasks_SelectedIndexChanged);
             // 
             // AddButton
             // 
@@ -86,10 +85,20 @@
             this.AddButton.UseVisualStyleBackColor = false;
             this.AddButton.Click += new System.EventHandler(this.AddButton_Click);
             // 
-            // numericUpDown1
+            // finishTimeList
             // 
-            resources.ApplyResources(this.numericUpDown1, "numericUpDown1");
-            this.numericUpDown1.Name = "numericUpDown1";
+            resources.ApplyResources(this.finishTimeList, "finishTimeList");
+            this.finishTimeList.FormattingEnabled = true;
+            this.finishTimeList.Name = "finishTimeList";
+            this.finishTimeList.SelectedIndexChanged += new System.EventHandler(this.ListBox1_SelectedIndexChanged);
+            // 
+            // strartTimeList
+            // 
+            resources.ApplyResources(this.strartTimeList, "strartTimeList");
+            this.strartTimeList.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.strartTimeList.FormattingEnabled = true;
+            this.strartTimeList.Name = "strartTimeList";
+            this.strartTimeList.SelectedIndexChanged += new System.EventHandler(this.ListBox2_SelectedIndexChanged);
             // 
             // FormMain
             // 
@@ -100,9 +109,9 @@
             this.Controls.Add(this.flowTop);
             this.Name = "FormMain";
             this.Load += new System.EventHandler(this.FormMain_Load);
+            this.ControlAdded += new System.Windows.Forms.ControlEventHandler(this.FormMain_ControlAdded);
             this.flowMain.ResumeLayout(false);
             this.flowLeft.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -115,7 +124,8 @@
         private System.Windows.Forms.FlowLayoutPanel flowLeft;
         private System.Windows.Forms.CheckedListBox cbTasks;
         private System.Windows.Forms.Button AddButton;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.ListBox strartTimeList;
+        private System.Windows.Forms.ListBox finishTimeList;
     }
 }
 

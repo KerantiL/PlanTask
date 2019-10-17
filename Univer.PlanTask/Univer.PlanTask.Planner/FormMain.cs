@@ -16,11 +16,14 @@ namespace Univer.PlanTask.Planner
 
         private void calendar_DateChanged(object sender, DateRangeEventArgs e)
         {
-            var even = e.Start.Day % 2;
-            for (int i = 0; i < cbTasks.Items.Count; i++)
+            cbTasks.Items.Clear();
+            strartTimeList.Items.Clear();
+            finishTimeList.Items.Clear();
+            var objs = store.GetAll();
+            foreach (Task task in objs)
             {
-                var state = (i + 1) % 2 == even ? CheckState.Checked : CheckState.Unchecked;
-                cbTasks.SetItemCheckState(i, state);
+                if (task.StartDate.Day <= e.Start.Day && task.Deadline.Day >= e.Start.Day)
+                    AddTask(task);
             }
         }
 
@@ -29,10 +32,12 @@ namespace Univer.PlanTask.Planner
             store = new FileStore<Task>();
 
             var objs = store.GetAll();
+            
 
-            foreach (Task item in objs)
+            foreach (Task task in objs)
             {
-                AddTask(item);
+                if (task.StartDate.Day <= calendar.TodayDate.Day && task.Deadline.Day >= calendar.TodayDate.Day)
+                    AddTask(task);
             }
 
         }
@@ -40,6 +45,9 @@ namespace Univer.PlanTask.Planner
         public void AddTask(Task item)
         {
             cbTasks.Items.Add(item.Name);
+            strartTimeList.Items.Add(item.StartDate);
+            finishTimeList.Items.Add(item.Deadline);
+            
         }
 
         public void AddTaskToStore(Task item)
@@ -56,6 +64,31 @@ namespace Univer.PlanTask.Planner
         {
             InputBox inputBox = new InputBox(this);
             inputBox.Show();
+        }
+
+        private void FormMain_ControlAdded(object sender, ControlEventArgs e)
+        {
+
+        }
+
+        private void ListBox1_SelectedIndexChanged(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void ListBox2_SelectedIndexChanged(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void FlowLeft_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void CbTasks_SelectedIndexChanged(object sender, System.EventArgs e)
+        {
+
         }
     }
 }

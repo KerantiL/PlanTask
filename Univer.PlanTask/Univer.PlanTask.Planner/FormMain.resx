@@ -126,10 +126,10 @@
     <value>0, 0</value>
   </data>
   <data name="flowTop.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="flowTop.Size" type="System.Drawing.Size, System.Drawing">
-    <value>664, 34</value>
+    <value>596, 28</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="flowTop.TabIndex" type="System.Int32, mscorlib">
@@ -147,18 +147,6 @@
   <data name="&gt;&gt;flowTop.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="calendar.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="calendar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="calendar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 9</value>
-  </data>
-  <data name="calendar.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
   <data name="&gt;&gt;calendar.Name" xml:space="preserve">
     <value>calendar</value>
   </data>
@@ -172,13 +160,13 @@
     <value>0</value>
   </data>
   <data name="flowMain.Location" type="System.Drawing.Point, System.Drawing">
-    <value>300, 41</value>
+    <value>400, 32</value>
   </data>
   <data name="flowMain.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="flowMain.Size" type="System.Drawing.Size, System.Drawing">
-    <value>352, 352</value>
+    <value>195, 191</value>
   </data>
   <data name="flowMain.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -195,26 +183,44 @@
   <data name="&gt;&gt;flowMain.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="cbTasks.Items" xml:space="preserve">
-    <value>Проснуться</value>
+  <data name="calendar.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
-  <data name="cbTasks.Items1" xml:space="preserve">
-    <value>Умыться</value>
+  <data name="calendar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="cbTasks.Items2" xml:space="preserve">
-    <value>Почистить зубы</value>
+  <data name="calendar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 7</value>
   </data>
-  <data name="cbTasks.Items3" xml:space="preserve">
-    <value>Прийти на работу</value>
+  <data name="calendar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 7, 7, 7</value>
+  </data>
+  <data name="calendar.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;calendar.Name" xml:space="preserve">
+    <value>calendar</value>
+  </data>
+  <data name="&gt;&gt;calendar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MonthCalendar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;calendar.Parent" xml:space="preserve">
+    <value>flowMain</value>
+  </data>
+  <data name="&gt;&gt;calendar.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cbTasks.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="cbTasks.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 2</value>
+    <value>2, 2</value>
   </data>
   <data name="cbTasks.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="cbTasks.Size" type="System.Drawing.Size, System.Drawing">
-    <value>272, 293</value>
+    <value>153, 356</value>
   </data>
   <data name="cbTasks.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -231,6 +237,60 @@
   <data name="&gt;&gt;cbTasks.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="strartTimeList.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="strartTimeList.ItemHeight" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="strartTimeList.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 3</value>
+  </data>
+  <data name="strartTimeList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 356</value>
+  </data>
+  <data name="strartTimeList.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;strartTimeList.Name" xml:space="preserve">
+    <value>strartTimeList</value>
+  </data>
+  <data name="&gt;&gt;strartTimeList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;strartTimeList.Parent" xml:space="preserve">
+    <value>flowLeft</value>
+  </data>
+  <data name="&gt;&gt;strartTimeList.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="finishTimeList.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="finishTimeList.ItemHeight" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="finishTimeList.Location" type="System.Drawing.Point, System.Drawing">
+    <value>272, 3</value>
+  </data>
+  <data name="finishTimeList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 356</value>
+  </data>
+  <data name="finishTimeList.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;finishTimeList.Name" xml:space="preserve">
+    <value>finishTimeList</value>
+  </data>
+  <data name="&gt;&gt;finishTimeList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;finishTimeList.Parent" xml:space="preserve">
+    <value>flowLeft</value>
+  </data>
+  <data name="&gt;&gt;finishTimeList.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="AddButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10.25pt</value>
   </data>
@@ -238,13 +298,10 @@
     <value>NoControl</value>
   </data>
   <data name="AddButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 301</value>
-  </data>
-  <data name="AddButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>3, 365</value>
   </data>
   <data name="AddButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>272, 49</value>
+    <value>375, 40</value>
   </data>
   <data name="AddButton.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -262,40 +319,19 @@
     <value>flowLeft</value>
   </data>
   <data name="&gt;&gt;AddButton.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="numericUpDown1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 357</value>
-  </data>
-  <data name="numericUpDown1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>8, 22</value>
-  </data>
-  <data name="numericUpDown1.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;numericUpDown1.Name" xml:space="preserve">
-    <value>numericUpDown1</value>
-  </data>
-  <data name="&gt;&gt;numericUpDown1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numericUpDown1.Parent" xml:space="preserve">
-    <value>flowLeft</value>
-  </data>
-  <data name="&gt;&gt;numericUpDown1.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="flowLeft.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Left</value>
   </data>
   <data name="flowLeft.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 34</value>
+    <value>0, 28</value>
   </data>
   <data name="flowLeft.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="flowLeft.Size" type="System.Drawing.Size, System.Drawing">
-    <value>276, 371</value>
+    <value>396, 422</value>
   </data>
   <data name="flowLeft.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -316,13 +352,13 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 16</value>
+    <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>664, 405</value>
+    <value>596, 450</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

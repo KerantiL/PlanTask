@@ -24,7 +24,7 @@ namespace Univer.PlanTask.Core.Store.Impl
 
         public FileStore()
         {
-            filePath = @"E:\path.json";
+            filePath = @"D:\path.json";
             Init();
         }
         public FileStore(string path)
