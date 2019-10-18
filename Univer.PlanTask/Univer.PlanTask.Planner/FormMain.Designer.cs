@@ -29,29 +29,22 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
-            this.flowTop = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowMain = new System.Windows.Forms.FlowLayoutPanel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.calendar = new System.Windows.Forms.MonthCalendar();
-            this.flowLeft = new System.Windows.Forms.FlowLayoutPanel();
-            this.cbTasks = new System.Windows.Forms.CheckedListBox();
-            this.AddButton = new System.Windows.Forms.Button();
-            this.finishTimeList = new System.Windows.Forms.ListBox();
-            this.strartTimeList = new System.Windows.Forms.ListBox();
-            this.flowMain.SuspendLayout();
-            this.flowLeft.SuspendLayout();
+            this.button1 = new System.Windows.Forms.Button();
+            this.taskList = new Univer.PlanTask.Planner.TaskList();
+            this.toolBar = new Univer.PlanTask.Planner.ToolBar();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // flowTop
+            // tableLayoutPanel1
             // 
-            resources.ApplyResources(this.flowTop, "flowTop");
-            this.flowTop.Name = "flowTop";
-            // 
-            // flowMain
-            // 
-            this.flowMain.Controls.Add(this.calendar);
-            resources.ApplyResources(this.flowMain, "flowMain");
-            this.flowMain.Name = "flowMain";
-            this.flowMain.Paint += new System.Windows.Forms.PaintEventHandler(this.FlowMain_Paint);
+            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
+            this.tableLayoutPanel1.Controls.Add(this.taskList, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.toolBar, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.calendar, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.button1, 0, 2);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             // 
             // calendar
             // 
@@ -59,73 +52,49 @@
             this.calendar.Name = "calendar";
             this.calendar.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.calendar_DateChanged);
             // 
-            // flowLeft
+            // button1
             // 
-            this.flowLeft.Controls.Add(this.cbTasks);
-            this.flowLeft.Controls.Add(this.strartTimeList);
-            this.flowLeft.Controls.Add(this.finishTimeList);
-            this.flowLeft.Controls.Add(this.AddButton);
-            resources.ApplyResources(this.flowLeft, "flowLeft");
-            this.flowLeft.Name = "flowLeft";
-            this.flowLeft.Paint += new System.Windows.Forms.PaintEventHandler(this.FlowLeft_Paint);
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click_1);
             // 
-            // cbTasks
+            // taskList
             // 
-            resources.ApplyResources(this.cbTasks, "cbTasks");
-            this.cbTasks.FormattingEnabled = true;
-            this.cbTasks.MultiColumn = true;
-            this.cbTasks.Name = "cbTasks";
-            this.cbTasks.SelectedIndexChanged += new System.EventHandler(this.CbTasks_SelectedIndexChanged);
+            this.taskList.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.taskList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.taskList, "taskList");
+            this.taskList.Name = "taskList";
             // 
-            // AddButton
+            // toolBar
             // 
-            this.AddButton.BackColor = System.Drawing.SystemColors.Control;
-            resources.ApplyResources(this.AddButton, "AddButton");
-            this.AddButton.Name = "AddButton";
-            this.AddButton.UseVisualStyleBackColor = false;
-            this.AddButton.Click += new System.EventHandler(this.AddButton_Click);
-            // 
-            // finishTimeList
-            // 
-            resources.ApplyResources(this.finishTimeList, "finishTimeList");
-            this.finishTimeList.FormattingEnabled = true;
-            this.finishTimeList.Name = "finishTimeList";
-            this.finishTimeList.SelectedIndexChanged += new System.EventHandler(this.ListBox1_SelectedIndexChanged);
-            // 
-            // strartTimeList
-            // 
-            resources.ApplyResources(this.strartTimeList, "strartTimeList");
-            this.strartTimeList.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.strartTimeList.FormattingEnabled = true;
-            this.strartTimeList.Name = "strartTimeList";
-            this.strartTimeList.SelectedIndexChanged += new System.EventHandler(this.ListBox2_SelectedIndexChanged);
+            this.toolBar.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.toolBar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.toolBar, "toolBar");
+            this.toolBar.Name = "toolBar";
+            this.toolBar.Load += new System.EventHandler(this.ToolBar_Load);
             // 
             // FormMain
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.flowLeft);
-            this.Controls.Add(this.flowMain);
-            this.Controls.Add(this.flowTop);
+            this.BackColor = System.Drawing.Color.LightCyan;
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FormMain";
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.ControlAdded += new System.Windows.Forms.ControlEventHandler(this.FormMain_ControlAdded);
-            this.flowMain.ResumeLayout(false);
-            this.flowLeft.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.FlowLayoutPanel flowTop;
-        private System.Windows.Forms.FlowLayoutPanel flowMain;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private TaskList taskList;
+        private ToolBar toolBar;
         private System.Windows.Forms.MonthCalendar calendar;
-        private System.Windows.Forms.FlowLayoutPanel flowLeft;
-        private System.Windows.Forms.CheckedListBox cbTasks;
-        private System.Windows.Forms.Button AddButton;
-        private System.Windows.Forms.ListBox strartTimeList;
-        private System.Windows.Forms.ListBox finishTimeList;
+        private System.Windows.Forms.Button button1;
     }
 }
 

@@ -60,6 +60,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TaskBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TaskBox.Designer.cs">
+      <DependentUpon>TaskBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TaskList.Designer.cs">
+      <DependentUpon>TaskList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ToolBar.Designer.cs">
+      <DependentUpon>ToolBar.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -74,7 +92,17 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="TaskBox.resx">
+      <DependentUpon>TaskBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskList.resx">
+      <DependentUpon>TaskList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolBar.resx">
+      <DependentUpon>ToolBar.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -93,6 +121,48 @@
       <Project>{1B71C722-B04F-42B8-AE59-12EF2E54CD18}</Project>
       <Name>Univer.PlanTask.Core</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Koala.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok-1976099_960_720.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\768px-Yes_Check_Circle.svg_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\768px-Yes_Check_Circle.svg_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\No-Symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\informacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Info_i_yellow.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-computer-icons-scalable-vector-graphics-symbol-cli-plus-sign-5aaad88d06c221.6107098215211459970277.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus_PNG113.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus_PNG38.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

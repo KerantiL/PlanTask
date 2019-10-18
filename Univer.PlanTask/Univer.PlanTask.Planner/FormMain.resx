@@ -117,86 +117,71 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="flowTop.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="flowTop.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="flowTop.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="flowTop.Size" type="System.Drawing.Size, System.Drawing">
-    <value>596, 28</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="flowTop.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;flowTop.Name" xml:space="preserve">
-    <value>flowTop</value>
-  </data>
-  <data name="&gt;&gt;flowTop.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;flowTop.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;flowTop.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;calendar.Name" xml:space="preserve">
-    <value>calendar</value>
-  </data>
-  <data name="&gt;&gt;calendar.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MonthCalendar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;calendar.Parent" xml:space="preserve">
-    <value>flowMain</value>
-  </data>
-  <data name="&gt;&gt;calendar.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="flowMain.Location" type="System.Drawing.Point, System.Drawing">
-    <value>400, 32</value>
-  </data>
-  <data name="flowMain.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="flowMain.Size" type="System.Drawing.Size, System.Drawing">
-    <value>195, 191</value>
-  </data>
-  <data name="flowMain.TabIndex" type="System.Int32, mscorlib">
+  <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;flowMain.Name" xml:space="preserve">
-    <value>flowMain</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="taskList.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
-  <data name="&gt;&gt;flowMain.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="taskList.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 32</value>
   </data>
-  <data name="&gt;&gt;flowMain.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="taskList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>469, 361</value>
   </data>
-  <data name="&gt;&gt;flowMain.ZOrder" xml:space="preserve">
+  <data name="taskList.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;taskList.Name" xml:space="preserve">
+    <value>taskList</value>
+  </data>
+  <data name="&gt;&gt;taskList.Type" xml:space="preserve">
+    <value>Univer.PlanTask.Planner.TaskList, Univer.PlanTask.Planner, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;taskList.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;taskList.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="toolBar.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="toolBar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>478, 32</value>
+  </data>
+  <data name="toolBar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 361</value>
+  </data>
+  <data name="toolBar.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;toolBar.Name" xml:space="preserve">
+    <value>toolBar</value>
+  </data>
+  <data name="&gt;&gt;toolBar.Type" xml:space="preserve">
+    <value>Univer.PlanTask.Planner.ToolBar, Univer.PlanTask.Planner, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;toolBar.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;toolBar.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="calendar.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="calendar.CalendarDimensions" type="System.Drawing.Size, System.Drawing">
+    <value>1, 2</value>
   </data>
   <data name="calendar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="calendar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 7</value>
-  </data>
-  <data name="calendar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>7, 7, 7, 7</value>
+    <value>560, 68</value>
   </data>
   <data name="calendar.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="&gt;&gt;calendar.Name" xml:space="preserve">
     <value>calendar</value>
@@ -205,148 +190,67 @@
     <value>System.Windows.Forms.MonthCalendar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;calendar.Parent" xml:space="preserve">
-    <value>flowMain</value>
+    <value>tableLayoutPanel1</value>
   </data>
   <data name="&gt;&gt;calendar.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="cbTasks.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9pt</value>
-  </data>
-  <data name="cbTasks.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 2</value>
-  </data>
-  <data name="cbTasks.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="cbTasks.Size" type="System.Drawing.Size, System.Drawing">
-    <value>153, 356</value>
-  </data>
-  <data name="cbTasks.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;cbTasks.Name" xml:space="preserve">
-    <value>cbTasks</value>
-  </data>
-  <data name="&gt;&gt;cbTasks.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckedListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cbTasks.Parent" xml:space="preserve">
-    <value>flowLeft</value>
-  </data>
-  <data name="&gt;&gt;cbTasks.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="strartTimeList.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt</value>
-  </data>
-  <data name="strartTimeList.ItemHeight" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="strartTimeList.Location" type="System.Drawing.Point, System.Drawing">
-    <value>160, 3</value>
-  </data>
-  <data name="strartTimeList.Size" type="System.Drawing.Size, System.Drawing">
-    <value>106, 356</value>
-  </data>
-  <data name="strartTimeList.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;strartTimeList.Name" xml:space="preserve">
-    <value>strartTimeList</value>
-  </data>
-  <data name="&gt;&gt;strartTimeList.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;strartTimeList.Parent" xml:space="preserve">
-    <value>flowLeft</value>
-  </data>
-  <data name="&gt;&gt;strartTimeList.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="finishTimeList.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt</value>
-  </data>
-  <data name="finishTimeList.ItemHeight" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="finishTimeList.Location" type="System.Drawing.Point, System.Drawing">
-    <value>272, 3</value>
-  </data>
-  <data name="finishTimeList.Size" type="System.Drawing.Size, System.Drawing">
-    <value>106, 356</value>
-  </data>
-  <data name="finishTimeList.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;finishTimeList.Name" xml:space="preserve">
-    <value>finishTimeList</value>
-  </data>
-  <data name="&gt;&gt;finishTimeList.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;finishTimeList.Parent" xml:space="preserve">
-    <value>flowLeft</value>
-  </data>
-  <data name="&gt;&gt;finishTimeList.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="AddButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10.25pt</value>
-  </data>
-  <data name="AddButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="button1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="AddButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 365</value>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>169, 408</value>
   </data>
-  <data name="AddButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>375, 40</value>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 30</value>
   </data>
-  <data name="AddButton.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
-  <data name="AddButton.Text" xml:space="preserve">
-    <value>Add task</value>
+  <data name="button1.Text" xml:space="preserve">
+    <value>button1</value>
   </data>
-  <data name="&gt;&gt;AddButton.Name" xml:space="preserve">
-    <value>AddButton</value>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
   </data>
-  <data name="&gt;&gt;AddButton.Type" xml:space="preserve">
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;AddButton.Parent" xml:space="preserve">
-    <value>flowLeft</value>
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
   </data>
-  <data name="&gt;&gt;AddButton.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="flowLeft.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
+  <data name="tableLayoutPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
-  <data name="flowLeft.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 28</value>
+  <data name="tableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
-  <data name="flowLeft.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="tableLayoutPanel1.RowCount" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
-  <data name="flowLeft.Size" type="System.Drawing.Size, System.Drawing">
-    <value>396, 422</value>
+  <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>768, 436</value>
   </data>
-  <data name="flowLeft.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="tableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;flowLeft.Name" xml:space="preserve">
-    <value>flowLeft</value>
+  <data name="&gt;&gt;tableLayoutPanel1.Name" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
   </data>
-  <data name="&gt;&gt;flowLeft.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;tableLayoutPanel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;flowLeft.Parent" xml:space="preserve">
+  <data name="&gt;&gt;tableLayoutPanel1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;flowLeft.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;tableLayoutPanel1.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="taskList" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="toolBar" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="calendar" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="button1" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,87,98521,Percent,12,01479,Absolute,228" /&gt;&lt;Rows Styles="Percent,7,380952,Percent,92,61905,Absolute,39" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -355,7 +259,10 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>596, 450</value>
+    <value>768, 436</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
